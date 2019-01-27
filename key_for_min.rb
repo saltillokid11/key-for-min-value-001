@@ -8,6 +8,7 @@ def key_for_min_value(name_hash)
     if lowkey == nil || v < lowval
       lowval = v;
       lowkey = k;
+    end
   end
   lowkey
 end
