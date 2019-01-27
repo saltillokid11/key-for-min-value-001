@@ -4,9 +4,9 @@
 def key_for_min_value(name_hash)
   lowkey = nil;
   lowval = nil;
-  name_hash.each do |k|
+  name_hash.each do |k, v|
     if lowkey == nil || v < lowval
-      # lowval = v;
+      lowval = v;
       lowkey = k;
     end
   end
